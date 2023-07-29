@@ -1,0 +1,45 @@
+//Variables
+$colorFondo : tomato;
+$colorLetra : white;
+$ancho: 50%; 
+$colorBoton : black;
+
+//Importación de archivos
+@import '_menu';
+
+
+h1{
+    //Creando una condición
+    @if($colorFondo== teal){
+        background-color: $colorFondo;
+    }
+    @else{
+        background-color: lightblue
+    }
+    
+    color: $colorLetra;
+    width: $ancho;
+}
+p{
+    background-color: $colorFondo;
+    color: $colorLetra;
+    width: $ancho + 20%;
+}
+
+//Creando una función - Mixins 
+@mixin caracteristicasBoton($colorDelBoton,$anchoBoton){
+    background-color: $colorDelBoton;
+    color: white;
+    text-transform: uppercase;
+    padding: $anchoBoton;
+    border-radius: 10px;
+}
+
+//Aplicadno CSS a los botones
+#botonConsultar{
+    @include caracteristicasBoton(blue,20px);
+}
+
+#botonDetalle{
+    @include caracteristicasBoton(red,10px);
+}

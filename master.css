@@ -1,0 +1,43 @@
+ul {
+  display: flex;
+}
+ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  background-color: lightblue;
+  color: white;
+  width: 50%;
+}
+
+p {
+  background-color: tomato;
+  color: white;
+  width: 70%;
+}
+
+#botonConsultar {
+  background-color: blue;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#botonDetalle {
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=master.css.map */

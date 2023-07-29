@@ -1,0 +1,17 @@
+//Aplicando CSS al Menu - Partials
+//Anidaciones
+ul{
+    display: flex;
+    li{
+        list-style-type: none;
+        margin: 10px;
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            text-transform: uppercase;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+}
